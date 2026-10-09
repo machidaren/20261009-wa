@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>ユーザー一覧（オブジェクト）</title>
+</head>
+<body>
+<div id="app">
+  <div class="users">
+    <h1>ユーザー一覧</h1>
+
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>名前</th>
+          <th>年齢</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="user in users">
+          <td>{{ user.name }}</td>
+          <td>{{ user.age }}歳</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
+<body>
+<div id="app">
+  <div class="pagination">
+    <h1>ページ一覧</h1>
+
+    <div class="page-list">
+      <button v-for="page in pageCount">
+        {{ page }}
+      </button>
+    </div>
+  </div>
+</div>
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

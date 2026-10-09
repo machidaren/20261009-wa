@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>商品一覧（key属性）</title>
+</head>
+<body>
+<div id="app">
+  <div class="products">
+    <h1>商品一覧</h1>
+
+    <ul class="product-list">
+      <li v-for="product in products" :key="product.id">
+        <span>{{ product.name }}</span>
+        <span>{{ product.price.toLocaleString() }}円</span>
+      </li>
+    </ul>
+  </div>
+</div>
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

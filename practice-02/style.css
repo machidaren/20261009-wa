@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  background: #f5f5f5;
+}
+
+.seats {
+  width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.seats h1 {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+
+.seat-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.seat-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.seat-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #eee;
+  border-radius: 50%;
+  font-weight: bold;
+}

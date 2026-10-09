@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>スタッフ一覧（インデックス番号）</title>
+</head>
+<body>
+<div id="app">
+  <div class="seats">
+    <h1>スタッフ一覧</h1>
+
+    <ul class="seat-list">
+      <li v-for="(person, index) in members">
+        <span class="seat-number">{{ index + 1 }}</span>
+        <span>{{ person }}</span>
+      </li>
+    </ul>
+  </div>
+</div>
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

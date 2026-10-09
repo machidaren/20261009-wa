@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>ユーザー情報（キー／値）</title>
+</head>
+<body>
+<div id="app">
+  <div class="profile">
+    <h1>ユーザー情報</h1>
+
+    <table class="profile-table">
+      <tbody>
+        <tr v-for="(value, key) in user">
+          <th>{{ key }}</th>
+          <td>{{ value }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

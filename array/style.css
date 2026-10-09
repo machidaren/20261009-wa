@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  background: #f5f5f5;
+}
+
+.news {
+  width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.news h1 {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+
+.news-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #ddd;
+}
+
+.news-list li {
+  border-bottom: 1px solid #ddd;
+}
+
+.news-list a {
+  display: block;
+  padding: 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.news-list a:hover {
+  background: #f5f5f5;
+}
